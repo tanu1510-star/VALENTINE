@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Will You Be My Valentine?</title>
+
+<style>
+body {
+  text-align: center;
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  font-family: Arial;
+  overflow: hidden;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+img {
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#yes {
+  background-color: red;
+  color: white;
+}
+
+#no {
+  background-color: black;
+  color: white;
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Will You Be My Valentine? 💖</h1>
+
+<img src="https://via.placeholder.com/250">
+
+<br>
+
+<button id="yes" onclick="alert('YAYYY ❤️ I LOVE YOU')">Yes 💘</button>
+<button id="no" onmouseover="moveButton()">No 😢</button>
+
+<audio autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function moveButton() {
+  var x = Math.random() * window.innerWidth;
+  var y = Math.random() * window.innerHeight;
+  document.getElementById('no').style.left = x + 'px';
+  document.getElementById('no').style.top = y + 'px';
+}
+</script>
+
+</body>
+</html>
