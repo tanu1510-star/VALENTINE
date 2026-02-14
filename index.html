@@ -1,72 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Will You Be My Valentine?</title>
-
-<style>
-body {
-  text-align: center;
-  background: linear-gradient(to right, #ff9a9e, #fecfef);
-  font-family: Arial;
-  overflow: hidden;
-}
-
-h1 {
-  margin-top: 50px;
-  font-size: 40px;
-}
-
-img {
-  width: 250px;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-button {
-  padding: 12px 25px;
-  font-size: 18px;
-  margin: 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-#yes {
-  background-color: red;
-  color: white;
-}
-
-#no {
-  background-color: black;
-  color: white;
-  position: absolute;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Be My Valentine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Will You Be My Valentine? 💖</h1>
+  <h1 id="receiver">RISHIKUMAR</h1>
+  <h2>From: <span id="sender">TANUSHRI</span> (<span id="nickname">MyAngryBird</span>)</h2>
 
-<img src="https://via.placeholder.com/250">
+  <div id="letters">
+    <p id="letter1">My love, every day with you feels like a beautiful dream I never want to wake up from. Your smile lights up my world, your laughter fills my heart, and your love makes every moment magical. On this Valentine’s Day, I just want you to know that being with you is the happiest part of my life, and I treasure every second we share together.
+    </p>
+    <p id="letter2">From the moment we met when I was 14 and you were 16, I felt something special, and little did I know that our journey would blossom into the beautiful love we share today. Since 22/03/2019, we’ve grown together, laughed together, and created memories that I will cherish forever. Seven Valentine’s Days later, my heart still skips a beat every time I think of you, and I’m so grateful for the love that keeps growing between us.
+    </p>
+    <p id="letter3">No matter how many fights or challenges we face, I will always choose you because no one is perfect, but our love is perfect for me. Let’s continue to dream, laugh, and grow together, building a beautiful life side by side. Be my forever Valentine, my love, my heart, and my everything.
+    </p>
+  </div>
 
-<br>
+  <button class="yes" onclick="yesClicked()">Yes 💕</button>
+  <button class="no" onmouseover="moveButton()">No 😢</button>
 
-<button id="yes" onclick="alert('YAYYY ❤️ I LOVE YOU')">Yes 💘</button>
-<button id="no" onmouseover="moveButton()">No 😢</button>
-
-<audio autoplay loop>
-  <source src="song.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-function moveButton() {
-  var x = Math.random() * window.innerWidth;
-  var y = Math.random() * window.innerHeight;
-  document.getElementById('no').style.left = x + 'px';
-  document.getElementById('no').style.top = y + 'px';
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
